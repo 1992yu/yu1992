@@ -1,0 +1,461 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+  color: #1f212a;
+}
+
+a {
+  text-decoration: none;
+  color: #1f212a;
+}
+
+img {
+  width: 100%;
+}
+
+.flex-box {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  padding-right: 32px;
+  padding-left: 32px;
+  width: auto;
+}
+
+span.marker {
+  /* background: linear-gradient(transparent 50%, #e0e0e2 50%); */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #ffe647 0,
+    #ffe647 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 50%;
+  font-weight: bold;
+}
+
+/* Nav start */
+header {
+  border-bottom: 0.5px solid #cacaca;
+  padding-right: 28px;
+  padding-left: 28px;
+  width: auto;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+
+.nav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  color: #1f212a;
+}
+
+.nav a {
+  margin-left: 36px;
+  padding: 4px 16px 4px 16px;
+  border: solid 1px;
+  border-radius: 40px;
+  color: #1f212a;
+  letter-spacing: 0.5px;
+}
+
+.nav a:hover {
+  background-color: #1f212a;
+  color: #fff;
+}
+
+/* Nav end */
+
+/* top start*/
+.p-top {
+  padding: 60px 0 60px 0;
+  /* background-color: #aaaaaa; */
+}
+
+.p-top h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  letter-spacing: 0px;
+}
+
+h2 {
+  /* background-color: #a8ffb8; */
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+.title {
+  /* background-color: #ffa8a8; */
+  padding: 0 60px 0 0;
+}
+
+.desc {
+  /* background-color: #a8aeff; */
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.detail {
+  border-bottom: 0.5px solid #cfcfcf;
+  padding: 12px 0 8px 0;
+}
+
+.detail span:nth-child(2) {
+  float: right;
+}
+
+/* top end */
+
+/* mv start */
+
+.mv img {
+  display: block;
+  margin: auto;
+}
+/* mv end */
+
+/* WF start */
+
+h3 {
+  /* background-color: #a8ffb8; */
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+.w-title {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pen {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+
+.frame span {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 28px;
+}
+
+.frame .sub {
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+  padding-top: 60px;
+}
+
+.bgc-g {
+  background: #f2f2f5;
+  padding: 36px 28px 36px 28px;
+  border-radius: 0px 36px 36px 36px;
+}
+
+/* WF end */
+
+/* bnr start */
+.bnr .detail span {
+  font-size: 16px;
+}
+
+.bnr .detail {
+  padding: 16px 0 0 0;
+}
+
+.b-desc-2 {
+  margin-top: 30px;
+}
+
+.b-desc-2 span {
+  font-size: 16px;
+}
+/* bnr end */
+
+/* footer start */
+footer {
+  padding-right: 36px;
+  padding-left: 36px;
+  margin-top: 120px;
+}
+.contact {
+  color: #1f212a;
+  width: 100%;
+  background-image: url(/img/f-bgi.jpg);
+  background-size: cover;
+  text-align: center;
+  border-radius: 60px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  animation: bg 25s infinite linear;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0px;
+  }
+}
+
+.contact h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 76px;
+  line-height: 90px;
+  letter-spacing: -2px;
+}
+
+/* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+button {
+  padding: 0;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* ボタンのスタイル */
+.buttonOutline {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  height: 64px;
+  padding: 8px 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #1f212a;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: transparent;
+  border: 0.5px solid #1f212a;
+  border-radius: 100px;
+  margin-top: 20px;
+  backdrop-filter: blur(16px);
+  letter-spacing: 1px;
+}
+
+@media (any-hover: hover) {
+  .buttonOutline {
+    transition: background-color 0.2s;
+  }
+
+  .buttonOutline:hover {
+    border: 0.5px solid #fff;
+    color: #fff;
+    /* background-color: #e9eaeb; */
+  }
+}
+
+footer .copyright {
+  margin: auto;
+  padding: 36px 0 12px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+/* footer end */
+
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* タブレット用スタイル */
+@media only screen and (min-width: 767px) {
+  /* top */
+  .title {
+    width: 55%;
+  }
+
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0px;
+  }
+
+  .desc {
+    width: 45%;
+  }
+  /* top end */
+
+  .sp-bnr {
+    display: none;
+  }
+
+  .pc-bnr {
+    padding-top: 60px;
+    margin: auto;
+  }
+
+  .pc-bnr img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .b-desc {
+    margin-left: 30px;
+  }
+
+  .frame {
+    margin-top: 72px;
+  }
+}
+
+/* モバイル用スタイル */
+@media screen and (max-width: 767px) {
+  main {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  /* top */
+  header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .header-area {
+    height: 56px;
+  }
+
+  .nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 400;
+  }
+
+  .nav a {
+    margin-left: 16px;
+  }
+
+  header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+
+  h2 {
+    /* background-color: #a8ffb8; */
+    margin-top: 20px;
+  }
+
+  .p-top {
+    display: block;
+    padding: 32px 0 0 0;
+  }
+
+  .p-top h1 {
+    font-size: 48px;
+    padding: 0;
+  }
+
+  .title {
+    padding: 0;
+  }
+
+  .desc {
+    /* background-color: #a8aeff; */
+    font-size: 12px;
+    margin-top: 28px;
+  }
+
+  .mv img {
+    margin-top: 60px;
+  }
+
+  /* top end */
+
+  /* frame start */
+  .frame {
+    margin: 60px 0 0 0;
+  }
+
+  .bnr {
+    margin: 40px 0 0 0;
+  }
+
+  .frame .sub {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  /* frame end */
+
+  /* bnr start */
+  .pc-bnr {
+    display: none;
+  }
+
+  .sp-bnr {
+    margin-top: 40px;
+  }
+
+  .sp-bnr img {
+    margin-bottom: 28px;
+  }
+  /* bnr end */
+
+  footer {
+    margin-top: 80px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .contact {
+    background-size: 200% auto;
+  }
+
+  .contact h2 {
+    font-size: 48px;
+    letter-spacing: 0px;
+    margin-bottom: 8px;
+  }
+
+  .buttonOutline {
+    margin-top: 0px;
+  }
+}
