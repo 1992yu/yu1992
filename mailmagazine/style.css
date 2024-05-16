@@ -210,7 +210,7 @@ footer {
 .contact {
   color: #1f212a;
   width: 100%;
-  background-image: url(/img/f-bgi.jpg);
+  background-image: url(../img/f-bgi.jpg);
   background-size: cover;
   text-align: center;
   border-radius: 60px;
