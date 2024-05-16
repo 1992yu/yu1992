@@ -582,8 +582,8 @@ scroll_up ｜下から上へ出現
 
   .sub-txt {
     flex: 1.2;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 28px;
     letter-spacing: 2px;
     font-weight: 400;
   }
