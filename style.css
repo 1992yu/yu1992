@@ -575,8 +575,8 @@ scroll_up ｜下から上へ出現
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     flex: 1;
-    font-size: 54px;
-    line-height: 70px;
+    font-size: 50px;
+    line-height: 64px;
     letter-spacing: -1px;
   }
 
